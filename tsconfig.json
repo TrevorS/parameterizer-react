@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "outDir": "dist/",
+    "watch": true
+  },
+  "compileOnSave": true,
+  "include": [
+    "src/**/*"
+  ]
+}

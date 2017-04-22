@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Parameterizer",
+  "version": "0.1.0",
+  "description": "Pin query parameters to your URLs",
+  "background": {
+    "scripts": [
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "background",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "browser_action": {
+    "default_title": "Parameterizer"
+  }
+}
