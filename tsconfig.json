@@ -1,11 +1,9 @@
 {
   "compilerOptions": {
-    "jsx": "react",
-    "outDir": "dist/",
-    "watch": true
-  },
-  "compileOnSave": true,
-  "include": [
-    "src/**/*"
-  ]
+    "target": "es5",
+    "module": "es6",
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "jsx": "react"
+  }
 }

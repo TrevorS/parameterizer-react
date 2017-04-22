@@ -5,6 +5,7 @@
   "description": "Pin query parameters to your URLs",
   "background": {
     "scripts": [
+      "background.js"
     ]
   },
   "permissions": [

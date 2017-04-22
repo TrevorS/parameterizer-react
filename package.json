@@ -3,9 +3,18 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "dev": "tsc"
+    "dev": "webpack --watch --progress"
   },
   "devDependencies": {
-    "typescript": "^2.2.2"
+    "@types/react": "^15.0.22",
+    "@types/react-dom": "^15.5.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4"
   }
 }
