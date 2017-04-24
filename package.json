@@ -12,6 +12,8 @@
     "@types/react-dom": "^15.5.0",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.28.0",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.3",
     "style-loader": "^0.16.1",
     "ts-loader": "^2.0.3",
     "tslint": "^5.1.0",
@@ -19,6 +21,7 @@
     "webpack": "^2.4.1"
   },
   "dependencies": {
+    "bulma": "^0.4.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "tslint-react": "^2.6.0"

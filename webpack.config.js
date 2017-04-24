@@ -34,10 +34,11 @@ const config = {
         loader: "ts-loader",
       },
       {
-        test: /\.css$/,
+        test: /\.s(a|c)ss$/,
         use: [
           "style-loader",
           "css-loader",
+          "sass-loader",
         ],
       },
     ]

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import "../styles/input.css";
+import "../styles/input.scss";
 
 interface IInputProps {
   name: string;
@@ -24,17 +24,20 @@ class Input extends Component<IInputProps, IInputState> {
     const { value } = this.state;
 
     return (
-      <div className="input">
-        <label htmlFor={name}>
+      <div className="input field">
+        <label htmlFor={name} className="label">
           {name}:
         </label>
 
-        <input
-          type="text"
-          id={name}
-          value={value}
-          onChange={this.handleChange}
-        />
+        <p className="control">
+          <input
+            type="text"
+            id={name}
+            value={value}
+            className="input"
+            onChange={this.handleChange}
+          />
+        </p>
       </div>
     );
   }
