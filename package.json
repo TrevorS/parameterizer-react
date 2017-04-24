@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "dev": "webpack --watch --progress"
+    "dev": "webpack --watch --progress",
+    "lint": "tslint src"
   },
   "devDependencies": {
+    "@types/chrome": "^0.0.46",
     "@types/react": "^15.0.22",
     "@types/react-dom": "^15.5.0",
     "copy-webpack-plugin": "^4.0.1",
     "ts-loader": "^2.0.3",
+    "tslint": "^5.1.0",
     "typescript": "^2.2.2",
     "webpack": "^2.4.1"
   },
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "tslint-react": "^2.6.0"
   }
 }

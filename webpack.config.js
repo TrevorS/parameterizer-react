@@ -3,11 +3,6 @@ const path = require('path');
 const webpack = require('webpack');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const extractCommons = new webpack.optimize.CommonsChunkPlugin({
-  name: 'commons',
-  filename: 'commons.js',
-});
-
 const copyWebpackPlugin = new CopyWebpackPlugin([
   {
     from: path.resolve(__dirname, 'src', 'options.html'),
@@ -38,7 +33,6 @@ const config = {
     ]
   },
   plugins: [
-    extractCommons,
     copyWebpackPlugin,
   ],
 };
