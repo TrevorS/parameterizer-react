@@ -5,17 +5,17 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const copyWebpackPlugin = new CopyWebpackPlugin([
   {
-    from: path.resolve(__dirname, 'src', 'options.html'),
+    from: path.resolve(__dirname, 'src', 'chrome', 'options.html'),
     to: path.resolve(__dirname, 'dist'),
   },
   {
-    from: path.resolve(__dirname, 'src', 'manifest.json'),
+    from: path.resolve(__dirname, 'src', 'chrome', 'manifest.json'),
     to: path.resolve(__dirname, 'dist'),
   },
 ]);
 
 const config = {
-  context: path.resolve(__dirname, 'src'),
+  context: path.resolve(__dirname, 'src', 'chrome'),
   entry: {
     background: './background.ts',
     options: './options.tsx',

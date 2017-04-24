@@ -1,5 +1,5 @@
-import { Pattern } from "./models/pattern";
-import { WebRequest } from "./models/web_request";
+import { Pattern } from "../models/pattern";
+import { WebRequest } from "../models/web_request";
 
 const patterns = [
   new Pattern("Test Pattern", "google.com", [ { key: "test", value: "test2" } ]),
