@@ -1,7 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(
-  <h1>Hello world!</h1>,
-  document.getElementById("root"),
+import { Input } from "../components/input";
+
+const app = (
+  <div>
+    <h1>Hello World!</h1>
+
+    <Input name="test" />
+  </div>
 );
+
+ReactDOM.render(app, document.getElementById("root"));
